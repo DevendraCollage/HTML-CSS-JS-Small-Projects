@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Title of the App -->
+    <title>QR-Code Generator Using HTML, CSS and JavaScript</title>
+    <!-- ? Link the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- todo: Google font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ! This is the heading will display to the User -->
+      <p>Enter Your URL Below ⬇️</p>
+      <!-- ! Input box to get the URL from the user -->
+      <input type="text" placeholder="Enter Your URL Here" id="qrText" />
+      <!-- * This is the QR where generated after the button click -->
+      <div id="imgBox">
+        <img src="" id="qrImg" />
+      </div>
+      <!-- ! This is the button to click on it -->
+      <button onclick="generateQR()">Generate QR</button>
+    </div>
+
+    <!-- ? Link the External JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
