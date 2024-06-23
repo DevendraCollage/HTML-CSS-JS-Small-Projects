@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: linear-gradient(0deg, #03737a33, #03737a33),
+    linear-gradient(0deg, #c8c8c842, #c8c8c842), #000000;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.container header {
+  padding: 20px;
+  /* border: 1px solid #ccc; Temporary i will comment this */
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 10px #9797fe;
+}
+
+.container header span {
+  color: rgb(220, 20, 20);
+}
+
+.container .content {
+  margin: 1.3rem;
+}
+
+.content .word {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+  margin-right: -1rem;
+  text-shadow: 1px 1px 1px #9797fe;
+  word-wrap: break-word;
+}
+
+.content .detail {
+  margin: 25px 0;
+}
+
+.detail p {
+  margin-bottom: 10px;
+}
+
+.content input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #bbb;
+  padding: 0 15px;
+  box-shadow: inset 1px 1px 4px #ccc, inset -1 1px 4px #ccc;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content .btn button {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: calc(100% / 2 - 5px);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.content .btn .refresh-word {
+  background: #545151;
+}
+
+.content .btn .check-word {
+  background: black;
+}
+
+.content .btn .check-word:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
